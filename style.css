@@ -35,8 +35,8 @@ header {
   height: 55px;
   width: 55px;
   background: transparent;
-  border: 2px solid #bb6f03;
-  color: #bb6f03;
+  border: 2px solid rgba(218, 165, 32, 0.794);
+  color: rgba(218, 165, 32, 0.794);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
