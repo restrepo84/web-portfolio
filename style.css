@@ -31,7 +31,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.logo i {
+.logo {
   height: 55px;
   width: 55px;
   background: transparent;
@@ -75,4 +75,6 @@ nav .nav-list li {
 nav .nav-list li a {
   display: inline-block;
   color: #eee;
+  margin-left: 55px;
+  font-size: 15px;
 }
