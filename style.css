@@ -14,10 +14,16 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: between;
+  padding: 0 5rem;
 }
 .main-width {
-  width: 1280px;
-  max-width: 95%;
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0px 20px;
 }
@@ -27,11 +33,22 @@ body {
   min-height: 100vh;
 }
 header {
-  padding: 40px 0 30px;
+  position: fixed;
+  width: 100%;
+  max-width: 1280px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 10rem;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
+}
+.nav-list-container {
+  padding: 0.5rem 0;
 }
 .logo a {
   height: 55px;
@@ -49,8 +66,8 @@ header {
 nav .hamburger {
   width: 35px;
   height: 24px;
-  right: 3%;
-  top: 60px;
+  right: 5.5rem;
+  top: 30px;
   z-index: 5;
   background: transparent;
   position: absolute;
@@ -69,6 +86,10 @@ nav .hamburger span:nth-child(2) {
   margin: 7px 0px;
 }
 nav .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   list-style: none;
 }
 nav .nav-list li {
@@ -109,6 +130,7 @@ nav .nav-list li.btn:hover a {
 }
 .container {
   padding-top: 190px;
+  z-index: 1;
 }
 .container .intro {
   margin-bottom: 40px;
@@ -177,6 +199,7 @@ span {
   padding-bottom: 40px;
 }
 .bottom p {
+  display: flex;
   color: #eee;
   letter-spacing: 2px;
   font-size: 15px;
@@ -203,10 +226,20 @@ span {
     transform: rotate(40deg);
     top: 0;
   }
-  nav .nav-list {
+
+  .nav-list-container {
     position: absolute;
+    top: 3rem;
+    transform: translateX(100%);
+    transition: all ease 100ms;
+    height: 1000px;
+  }
+
+  nav .nav-list-container .nav-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     top: 50px;
-    right: -60%;
     bottom: 0;
     width: 30%;
     height: 40%;
@@ -229,14 +262,12 @@ span {
     margin-bottom: 40px;
   }
   nav .nav-list li.btn a {
-    position: absolute;
+    position: relative;
     bottom: 0%;
-    right: 20%;
-    left: 20%;
     padding: 7px 15px;
     font-size: 14px;
   }
-  nav .nav-list.open {
-    right: 0;
+  nav .nav-list-container.open {
+    transform: translateX(-25%);
   }
 }
