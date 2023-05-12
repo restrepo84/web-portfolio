@@ -158,3 +158,18 @@ span {
   border-radius: 30px;
   cursor: pointer;
 }
+.container .intro button:hover {
+  background: transparent;
+  border: 2px solid rgba(218, 165, 32, 0.794);
+  color: rgba(218, 165, 32, 0.794);
+  transition: 0.4s;
+}
+.bottom {
+  margin-top: 243px;
+  padding-bottom: 40px;
+}
+.bottom p {
+  color: #eee;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
