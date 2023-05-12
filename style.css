@@ -31,7 +31,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.logo {
+.logo a {
   height: 55px;
   width: 55px;
   background: transparent;
@@ -92,6 +92,12 @@ nav .nav-list li.btn a {
   line-height: 1.3;
   color: rgba(218, 165, 32, 0.794);
   font-weight: 500;
+}
+.btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
 }
 nav .nav-list li.btn:hover a {
   background: rgba(218, 165, 32, 0.794);
@@ -197,16 +203,17 @@ span {
   }
   nav .nav-list {
     position: absolute;
-    top: 90px;
-    right: -65%;
+    top: 50px;
+    right: -60%;
     bottom: 0;
-    width: 60%;
-    height: 50%;
+    width: 30%;
+    height: 40%;
     background: black;
     z-index: 2;
     padding: 6% 9%;
     transition: 0.3s right;
-    border-radius: 10px;
+    border-radius: 20px;
+    min-width: 200px;
   }
   nav .nav-list li {
     display: block;
