@@ -50,7 +50,7 @@ nav .hamburger {
   right: 3%;
   top: 60px;
   z-index: 5;
-  background: white;
+  background: transparent;
   position: absolute;
   cursor: pointer;
   display: none;
@@ -219,7 +219,7 @@ span {
     margin-left: 0;
     margin-bottom: 40px;
   }
-  nav .nav-list li.button a {
+  nav .nav-list li.btn a {
     position: absolute;
     bottom: 0%;
     right: 20%;
