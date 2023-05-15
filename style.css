@@ -272,3 +272,32 @@ span {
   }
 }
 /* margin test for sticky nav bar */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  color: #eee;
+}
+.about-img img {
+  max-width: 530px;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+}
+.about-text h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+.about-text h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #eee;
+  line-height: 1.7;
+  margin: 15px 0 30px;
+}
+.about-text p {
+  color: #eee;
+  line-height: 1.8;
+  margin-bottom: 4rem;
+}
