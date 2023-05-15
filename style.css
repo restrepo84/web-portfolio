@@ -373,10 +373,27 @@ h3 {
 .layer {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #9d7d4b);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #534e47);
   position: absolute;
   border-radius: 8px;
   left: 0;
   bottom: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+.layer h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.layer p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.8;
 }
