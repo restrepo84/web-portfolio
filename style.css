@@ -306,8 +306,8 @@ span {
 .skills {
   color: #eee;
   width: 100%;
-  margin-top: 250px;
-  scroll-margin-top: 90px;
+  margin-top: 20rem;
+  /* scroll-margin-top: 100px; */
 }
 .main-text {
   text-align: center;
@@ -356,7 +356,8 @@ h3 {
 }
 .projects {
   color: #eee;
-  margin-top: 15rem;
+  margin-top: 35rem;
+  scroll-margin-top: 70px;
 }
 .row {
   position: relative;
@@ -372,7 +373,7 @@ h3 {
 }
 .layer {
   width: 100%;
-  height: 100%;
+  height: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.1), #534e47);
   position: absolute;
   border-radius: 8px;
@@ -396,4 +397,22 @@ h3 {
   color: #ccc;
   font-size: 1rem;
   line-height: 1.8;
+}
+.layer i {
+  color: rgba(218, 165, 32, 0.794);
+  margin-top: 20px;
+  font-size: 20px;
+  background: #eee;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.row:hover img {
+  transform: scale(1.1);
+}
+.row:hover .layer {
+  height: 100%;
 }
