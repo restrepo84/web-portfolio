@@ -274,19 +274,13 @@ span {
 }
 /* margin test for sticky nav bar */
 .about {
-  /* display: grid; */
-  display: flex;
-  justify-content: center;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
   color: #eee;
   scroll-margin-top: 70px;
 }
-.about-content {
-  display: flex;
-}
-
 .about-img img {
   max-width: 530px;
   height: auto;
@@ -296,7 +290,6 @@ span {
 .about-text h2 {
   font-size: 3rem;
   line-height: 1;
-  margin-left: 40px;
 }
 .about-text h4 {
   font-size: 24px;
@@ -304,31 +297,16 @@ span {
   color: #eee;
   line-height: 1.7;
   margin: 15px 0 30px;
-  margin-left: 40px;
 }
 .about-text p {
   color: #eee;
   line-height: 1.8;
   margin-bottom: 4rem;
-  margin-left: 40px;
-}
-@media (max-width: 767px) {
-  .about {
-    flex-direction: column;
-  }
-
-  .about-content {
-    margin-bottom: 20px;
-  }
-
-  .about-text {
-    margin-top: 0;
-  }
 }
 .skills {
   color: #eee;
   width: 100%;
-  margin-top: 20rem;
+  margin-top: 35rem;
   /* scroll-margin-top: 100px; */
 }
 .main-text {
@@ -445,11 +423,6 @@ h3 {
   align-items: center;
   gap: 2.5rem;
   margin-top: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 .contact-text h4 {
   margin: 18px 0;
@@ -494,4 +467,22 @@ form textarea {
   transition: 1s ease-in-out;
   background: #5b5336;
   cursor: pointer;
+}
+@media (max-width: 920px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-img {
+    text-align: center;
+    order: 2;
+  }
+  .about-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
 }
