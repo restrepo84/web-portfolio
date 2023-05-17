@@ -329,6 +329,9 @@ span {
   margin-top: 5rem;
   justify-content: center;
 }
+.skills {
+  scroll-margin-top: 70px;
+}
 h3 {
   line-height: 2;
 }
