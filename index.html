@@ -11,8 +11,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Electrolize&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;800&family=Red+Hat+Display:wght@700&family=Roboto&display=swap"
     rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
   <script src="https://kit.fontawesome.com/87baddb149.js" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("dsY0_UFOTpO7uqzSb");
+    })();
+  </script>
   <title>Steve Restrepo</title>
 </head>
 
@@ -168,11 +175,11 @@
         <h2>Contact <span>Me!</span></h2>
       </div><!--contact text-->
       <div class="contact-form">
-        <form action="">
-          <input type="name" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <input type="" placeholder="Your Mobile Number" required>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Let's Connect"></textarea>
+        <form action="" id="form">
+          <input type="name" placeholder="Your Name" name="name" required>
+          <input type="email" placeholder="Your Email" name="email" required>
+          <input type="" placeholder="Your Mobile Number" name="number" required>
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Let's Connect"></textarea>
           <input type="submit" value="Send Message" class="submit" required>
         </form>
       </div>
@@ -183,7 +190,6 @@
     </div>
   </main>
 
-  <script type="text/javascript" src="js/script.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed(".input", {
@@ -193,7 +199,6 @@
       loop: true
     });
   </script>
-
 </body>
 
 </html>
