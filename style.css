@@ -485,6 +485,7 @@ form textarea {
     max-width: 100%;
   }
   .contact {
+    /* max-width: 100%; */
     grid-template-columns: 1fr;
     justify-content: center;
   }
